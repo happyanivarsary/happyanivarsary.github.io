@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#900C3F
+
+}
+.sabkaBaap{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    margin-left:35%;
+    color: red;
+}
+.top_content{
+    display: flex;
+    flex-direction: row;
+}
+.main-header{
+    position: relative;
+    background-color:#ffffff;
+    transition: transform .5s;
+    transform: scale(.05);
+    margin: auto;
+
+}
+.main-header h1{
+    margin: auto;
+    color:red;
+}
+.temp-header{
+    position: relative;
+    background-color:#ffffff;
+    transition: transform .5s;
+    transform: scale(.05);
+}
+.left1{
+
+    left: 27em;
+}
+.right1{
+    right: 27em;
+}
+.left2{
+
+    left: 32em;
+}
+.right2{
+    right: 32em;
+}
+.left3{
+
+    left: 22em;
+}
+.right3{
+    right: 22em;
+}
+.main-header p{
+    color:yellow;
+    border: 2rem yellow;
+    width: 55vmin;
+    padding: 1rem;
+   
+}
+.main-header:hover{
+
+        background-color: inherit;
+        transform: scale(1.5);
+  
+}
+.main-header h1 span{
+    color:red;
+    margin: auto;    
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+
+    
+}
+
+.card{
+    height: 80vh;
+    position: relative;
+    background:pink;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem  ;
+    transition: transform .5s;
+    transform: scale(.5);
+   
+    
+}
+.card:hover{
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 0%;
+}
+.card img{
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+}
+.card>div{
+    padding: 2rem;
+}
+.card:nth-child(even) img{
+    order:2
+}
+.card:nth-child(even){
+    grid-template-columns: 1fr 2fr;
+}
+@media(max-width:700px){
+    .card{
+        display:block 
+    }
+}
