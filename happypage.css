@@ -8,6 +8,9 @@ body{
     background:#900C3F
 
 }
+.column{
+    background: pink;
+}
 .sabkaBaap{
     margin: auto;
     display: flex;
@@ -17,7 +20,9 @@ body{
     justify-content: center;
 }
 span{
-    margin-left:35%;
+    font-size: 2rem;
+    margin: auto;
+    width: 100%;
     color: red;
 }
 .top_content{
@@ -66,7 +71,7 @@ span{
 .main-header p{
     color:yellow;
     border: 2rem yellow;
-    width: 55vmin;
+    width: 45vmin;
     padding: 1rem;
    
 }
@@ -77,7 +82,7 @@ span{
   
 }
 .main-header h1 span{
-    color:red;
+    color:red;  
     margin: auto;    
 }
 img{
@@ -91,7 +96,9 @@ img{
 
     
 }
-
+.row{
+    display: flex;
+}
 .card{
     height: 80vh;
     position: relative;
@@ -105,12 +112,86 @@ img{
    
     
 }
-.card:hover{
-    transform: scale(1);
-    opacity: 1;
-    border-radius: 0%;
+.card-4-images{
+    height: 160vh;
+    position: relative;
+    background:pink;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem  ;
+    transition: transform .5s;
+    transform: scale(.5);
+   
+    
+}
+.card-marks{
+    height: 80vh;
+    position: relative;
+    background:pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem  ;
+    transition: transform .5s;
+    transform: scale(.5);
+   
+    
+}
+.card-marks h1{
+    color:red;
+}
+.card-marks p{
+    color:firebrick;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.card h1{
+    color:red;
+}
+.card p{
+    color:firebrick;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.card-2{
+    height: 80vh;
+    position: relative;
+    background:pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem  ;
+   
+   
+    
+}
+
+.between-images{
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center
+}
+.between-images h1{
+    color:red;
+}
+.between-images p{
+    color:firebrick;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+img{
+     margin-left: 0;
+    height: 100%;
+    width: 100%;
 }
 .card img{
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+}
+.card-2 img{
     margin-left: 0;
     height: 100%;
     width: 100%;
